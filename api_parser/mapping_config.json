@@ -1,0 +1,78 @@
+{
+  "JohnDeere_AEMP": {
+    "context": { "brand": "Deere", "protocol": "AEMP_2.0" },
+    "mappings": {
+      "1092": { "path": "Infrastructure.FlowRate", "label": "Liquid_Flow_Rate", "multiplier": 1.0, "unit": "L/h", "data_type": "instantaneous" },
+      "1093": { "path": "Infrastructure.Pressure", "label": "Liquid_Pressure", "multiplier": 1.0, "unit": "kPa", "data_type": "instantaneous" },
+      "110":  { "path": "Infrastructure.PumpStatus", "label": "Pump_Power_Status", "multiplier": 1.0, "unit": "State", "data_type": "instantaneous" },
+      "7001": { "path": "Agronomic.Soil.pH", "label": "Soil_pH", "multiplier": 1.0, "unit": "pH", "data_type": "instantaneous" },
+      "7002": { "path": "Agronomic.Soil.VWC", "label": "Volumetric_Water_Content", "multiplier": 1.0, "unit": "%", "data_type": "instantaneous" },
+      "7003": { "path": "Environmental.Temperature.Ambient", "label": "Ambient_Temp", "multiplier": 1.0, "unit": "°C", "data_type": "instantaneous" },
+      "7004": { "path": "Environmental.Humidity.Relative", "label": "Relative_Humidity", "multiplier": 1.0, "unit": "%", "data_type": "instantaneous" },
+      "7005": { "path": "Environmental.Weather.Precipitation", "label": "Precipitation_Expected", "multiplier": 1.0, "unit": "mm", "data_type": "aggregated" },
+      "7006": { "path": "Environmental.Calculated.VPD", "label": "Vapor_Pressure_Deficit", "multiplier": 1.0, "unit": "kPa", "data_type": "instantaneous" },
+      "7007": { "path": "Environmental.Weather.WindSpeed", "label": "Wind_Speed", "multiplier": 1.0, "unit": "m/s", "data_type": "instantaneous" },
+      "7008": { "path": "Environmental.Weather.SolarRadiation", "label": "Solar_Radiation", "multiplier": 1.0, "unit": "W/m2", "data_type": "instantaneous" },
+      "7009": { "path": "Infrastructure.Calculated.SpecificEnergy", "label": "Specific_Energy", "multiplier": 1.0, "unit": "Es", "data_type": "instantaneous" },
+      "7010": { "path": "Infrastructure.Calculated.FlowConductance", "label": "Flow_Conductance", "multiplier": 1.0, "unit": "G", "data_type": "instantaneous" },
+      "7011": { "path": "Agronomic.Soil.Temperature", "label": "Soil_Temperature", "multiplier": 1.0, "unit": "°C", "data_type": "instantaneous" }
+    }
+  },
+  "FieldView_v5": {
+    "context": { "brand": "Climate", "protocol": "REST_v5" },
+    "mappings": {
+      "1092": { "path": "equipment.irrigation.flow_rate_lph", "label": "Liquid_Flow_Rate", "multiplier": 1.0, "unit": "L/h", "data_type": "instantaneous" },
+      "1093": { "path": "equipment.irrigation.pressure_kpa", "label": "Liquid_Pressure", "multiplier": 1.0, "unit": "kPa", "data_type": "instantaneous" },
+      "110":  { "path": "equipment.irrigation.pump_active", "label": "Pump_Power_Status", "multiplier": 1.0, "unit": "State", "data_type": "instantaneous" },
+      "7001": { "path": "agronomics.soil.ph_level", "label": "Soil_pH", "multiplier": 1.0, "unit": "pH", "data_type": "instantaneous" },
+      "7002": { "path": "agronomics.soil.vwc_pct", "label": "Volumetric_Water_Content", "multiplier": 1.0, "unit": "%", "data_type": "instantaneous" },
+      "7003": { "path": "climate.temp_c", "label": "Ambient_Temp", "multiplier": 1.0, "unit": "°C", "data_type": "instantaneous" },
+      "7004": { "path": "climate.rh_pct", "label": "Relative_Humidity", "multiplier": 1.0, "unit": "%", "data_type": "instantaneous" },
+      "7005": { "path": "climate.forecast_rain_mm", "label": "Precipitation_Expected", "multiplier": 1.0, "unit": "mm", "data_type": "aggregated" },
+      "7006": { "path": "climate.vpd_kpa", "label": "Vapor_Pressure_Deficit", "multiplier": 1.0, "unit": "kPa", "data_type": "instantaneous" },
+      "7007": { "path": "climate.wind_ms", "label": "Wind_Speed", "multiplier": 1.0, "unit": "m/s", "data_type": "instantaneous" },
+      "7008": { "path": "climate.solar_wm2", "label": "Solar_Radiation", "multiplier": 1.0, "unit": "W/m2", "data_type": "instantaneous" },
+      "7009": { "path": "equipment.calculated.spec_energy", "label": "Specific_Energy", "multiplier": 1.0, "unit": "Es", "data_type": "instantaneous" },
+      "7010": { "path": "equipment.calculated.flow_cond", "label": "Flow_Conductance", "multiplier": 1.0, "unit": "G", "data_type": "instantaneous" },
+      "7011": { "path": "agronomics.soil.temp_c", "label": "Soil_Temperature", "multiplier": 1.0, "unit": "°C", "data_type": "instantaneous" }
+    }
+  },
+  "CNH_Industrial_v2": {
+    "context": { "brand": "CaseIH", "protocol": "CNH_v2" },
+    "mappings": {
+      "1092": { "path": "telemetry.fluid.gpm", "label": "Liquid_Flow_Rate", "multiplier": 227.125, "unit": "L/h", "data_type": "instantaneous" },
+      "1093": { "path": "telemetry.pressure.psi", "label": "Liquid_Pressure", "multiplier": 6.89476, "unit": "kPa", "data_type": "instantaneous" },
+      "110":  { "path": "telemetry.pump.running", "label": "Pump_Power_Status", "multiplier": 1.0, "unit": "State", "data_type": "instantaneous" },
+      "7001": { "path": "soil_metrics.ph", "label": "Soil_pH", "multiplier": 1.0, "unit": "pH", "data_type": "instantaneous" },
+      "7002": { "path": "soil_metrics.vwc_moisture", "label": "Volumetric_Water_Content", "multiplier": 1.0, "unit": "%", "data_type": "instantaneous" },
+      "7003": { "path": "ambient.temp_f", "label": "Ambient_Temp", "multiplier": 0.5556, "unit": "°C", "data_type": "instantaneous" }, 
+      "7004": { "path": "ambient.humidity", "label": "Relative_Humidity", "multiplier": 1.0, "unit": "%", "data_type": "instantaneous" },
+      "7005": { "path": "ambient.forecast_rainfall_inches", "label": "Precipitation_Expected", "multiplier": 25.4, "unit": "mm", "data_type": "aggregated" },
+      "7006": { "path": "ambient.vpd", "label": "Vapor_Pressure_Deficit", "multiplier": 1.0, "unit": "kPa", "data_type": "instantaneous" },
+      "7007": { "path": "ambient.wind_mph", "label": "Wind_Speed", "multiplier": 0.44704, "unit": "m/s", "data_type": "instantaneous" },
+      "7008": { "path": "ambient.solar_rad", "label": "Solar_Radiation", "multiplier": 1.0, "unit": "W/m2", "data_type": "instantaneous" },
+      "7009": { "path": "telemetry.calculated.es", "label": "Specific_Energy", "multiplier": 1.0, "unit": "Es", "data_type": "instantaneous" },
+      "7010": { "path": "telemetry.calculated.g", "label": "Flow_Conductance", "multiplier": 1.0, "unit": "G", "data_type": "instantaneous" },
+      "7011": { "path": "soil_metrics.temp_f", "label": "Soil_Temperature", "multiplier": 0.5556, "unit": "°C", "data_type": "instantaneous" }
+    }
+  },
+  "DIY_Maker_ESP32": {
+    "context": { "brand": "Custom_Hardware", "protocol": "MQTT_MicroPython" },
+    "mappings": {
+      "1092": { "path": "sensors.pulse.flow_lph", "label": "Liquid_Flow_Rate", "multiplier": 1.0, "unit": "L/h", "data_type": "instantaneous" },
+      "1093": { "path": "sensors.adc.pressure_kpa", "label": "Liquid_Pressure", "multiplier": 1.0, "unit": "kPa", "data_type": "instantaneous" },
+      "110":  { "path": "relays.pump_state", "label": "Pump_Power_Status", "multiplier": 1.0, "unit": "State", "data_type": "instantaneous" },
+      "7001": { "path": "sensors.analog.ph_val", "label": "Soil_pH", "multiplier": 1.0, "unit": "pH", "data_type": "instantaneous" },
+      "7002": { "path": "sensors.analog.vwc_pct", "label": "Volumetric_Water_Content", "multiplier": 1.0, "unit": "%", "data_type": "instantaneous" },
+      "7003": { "path": "sensors.i2c.bme280_temp", "label": "Ambient_Temp", "multiplier": 1.0, "unit": "°C", "data_type": "instantaneous" },
+      "7004": { "path": "sensors.i2c.bme280_rh", "label": "Relative_Humidity", "multiplier": 1.0, "unit": "%", "data_type": "instantaneous" },
+      "7005": { "path": "external_api.openweather.rain_expected", "label": "Precipitation_Expected", "multiplier": 1.0, "unit": "mm", "data_type": "aggregated" },
+      "7006": { "path": "computed.vpd", "label": "Vapor_Pressure_Deficit", "multiplier": 1.0, "unit": "kPa", "data_type": "instantaneous" },
+      "7007": { "path": "sensors.uart.anemometer_ms", "label": "Wind_Speed", "multiplier": 1.0, "unit": "m/s", "data_type": "instantaneous" },
+      "7008": { "path": "sensors.analog.pyranometer_wm2", "label": "Solar_Radiation", "multiplier": 1.0, "unit": "W/m2", "data_type": "instantaneous" },
+      "7009": { "path": "computed.specific_energy", "label": "Specific_Energy", "multiplier": 1.0, "unit": "Es", "data_type": "instantaneous" },
+      "7010": { "path": "computed.flow_conductance", "label": "Flow_Conductance", "multiplier": 1.0, "unit": "G", "data_type": "instantaneous" },
+      "7011": { "path": "sensors.onewire.ds18b20_soil_temp", "label": "Soil_Temperature", "multiplier": 1.0, "unit": "°C", "data_type": "instantaneous" }
+    }
+  }
+}
