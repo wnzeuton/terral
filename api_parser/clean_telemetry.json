@@ -1,0 +1,506 @@
+[
+  {
+    "isobus_header": {
+      "spn": "1092",
+      "label": "Liquid_Flow_Rate",
+      "unit": "L/h",
+      "data_type": "instantaneous"
+    },
+    "value": 100.0,
+    "source_metadata": {
+      "origin": "JohnDeere_AEMP",
+      "protocol": "AEMP_2.0",
+      "timestamp": "2026-02-28T22:48:02.386984Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "1093",
+      "label": "Liquid_Pressure",
+      "unit": "kPa",
+      "data_type": "instantaneous"
+    },
+    "value": 300.0,
+    "source_metadata": {
+      "origin": "JohnDeere_AEMP",
+      "protocol": "AEMP_2.0",
+      "timestamp": "2026-02-28T22:48:02.386984Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7002",
+      "label": "Volumetric_Water_Content",
+      "unit": "%",
+      "data_type": "instantaneous"
+    },
+    "value": 20.0,
+    "source_metadata": {
+      "origin": "JohnDeere_AEMP",
+      "protocol": "AEMP_2.0",
+      "timestamp": "2026-02-28T22:48:02.386984Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7003",
+      "label": "Ambient_Temp",
+      "unit": "\u00b0C",
+      "data_type": "instantaneous"
+    },
+    "value": 25.0,
+    "source_metadata": {
+      "origin": "JohnDeere_AEMP",
+      "protocol": "AEMP_2.0",
+      "timestamp": "2026-02-28T22:48:02.386984Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7004",
+      "label": "Relative_Humidity",
+      "unit": "%",
+      "data_type": "instantaneous"
+    },
+    "value": 50.0,
+    "source_metadata": {
+      "origin": "JohnDeere_AEMP",
+      "protocol": "AEMP_2.0",
+      "timestamp": "2026-02-28T22:48:02.386984Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7005",
+      "label": "Precipitation_Expected",
+      "unit": "mm",
+      "data_type": "aggregated"
+    },
+    "value": 0.0,
+    "source_metadata": {
+      "origin": "JohnDeere_AEMP",
+      "protocol": "AEMP_2.0",
+      "timestamp": "2026-02-28T22:48:02.386984Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7007",
+      "label": "Wind_Speed",
+      "unit": "m/s",
+      "data_type": "instantaneous"
+    },
+    "value": 2.0,
+    "source_metadata": {
+      "origin": "JohnDeere_AEMP",
+      "protocol": "AEMP_2.0",
+      "timestamp": "2026-02-28T22:48:02.386984Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7008",
+      "label": "Solar_Radiation",
+      "unit": "W/m2",
+      "data_type": "instantaneous"
+    },
+    "value": 800.0,
+    "source_metadata": {
+      "origin": "JohnDeere_AEMP",
+      "protocol": "AEMP_2.0",
+      "timestamp": "2026-02-28T22:48:02.386984Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7006",
+      "label": "Vapor_Pressure_Deficit",
+      "unit": "kPa",
+      "data_type": "instantaneous"
+    },
+    "value": 1.58,
+    "source_metadata": {
+      "origin": "Calculated_Local",
+      "protocol": "Internal",
+      "timestamp": "2026-02-28T22:48:02.386984Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "1092",
+      "label": "Liquid_Flow_Rate",
+      "unit": "L/h",
+      "data_type": "instantaneous"
+    },
+    "value": 100.0,
+    "source_metadata": {
+      "origin": "FieldView_v5",
+      "protocol": "REST_v5",
+      "timestamp": "2026-02-28T22:48:02.437962Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "1093",
+      "label": "Liquid_Pressure",
+      "unit": "kPa",
+      "data_type": "instantaneous"
+    },
+    "value": 300.0,
+    "source_metadata": {
+      "origin": "FieldView_v5",
+      "protocol": "REST_v5",
+      "timestamp": "2026-02-28T22:48:02.437962Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7002",
+      "label": "Volumetric_Water_Content",
+      "unit": "%",
+      "data_type": "instantaneous"
+    },
+    "value": 20.0,
+    "source_metadata": {
+      "origin": "FieldView_v5",
+      "protocol": "REST_v5",
+      "timestamp": "2026-02-28T22:48:02.437962Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7003",
+      "label": "Ambient_Temp",
+      "unit": "\u00b0C",
+      "data_type": "instantaneous"
+    },
+    "value": 35.0,
+    "source_metadata": {
+      "origin": "FieldView_v5",
+      "protocol": "REST_v5",
+      "timestamp": "2026-02-28T22:48:02.437962Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.7071
+  },
+  {
+    "isobus_header": {
+      "spn": "7004",
+      "label": "Relative_Humidity",
+      "unit": "%",
+      "data_type": "instantaneous"
+    },
+    "value": 20.0,
+    "source_metadata": {
+      "origin": "FieldView_v5",
+      "protocol": "REST_v5",
+      "timestamp": "2026-02-28T22:48:02.437962Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": -0.7071
+  },
+  {
+    "isobus_header": {
+      "spn": "7005",
+      "label": "Precipitation_Expected",
+      "unit": "mm",
+      "data_type": "aggregated"
+    },
+    "value": 0.0,
+    "source_metadata": {
+      "origin": "FieldView_v5",
+      "protocol": "REST_v5",
+      "timestamp": "2026-02-28T22:48:02.437962Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [
+      "INTERPOLATED_MEAN"
+    ],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7006",
+      "label": "Vapor_Pressure_Deficit",
+      "unit": "kPa",
+      "data_type": "instantaneous"
+    },
+    "value": 1.58,
+    "source_metadata": {
+      "origin": "FieldView_v5",
+      "protocol": "REST_v5",
+      "timestamp": "2026-02-28T22:48:02.437962Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [
+      "INTERPOLATED_MEAN"
+    ],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7007",
+      "label": "Wind_Speed",
+      "unit": "m/s",
+      "data_type": "instantaneous"
+    },
+    "value": 9.5,
+    "source_metadata": {
+      "origin": "FieldView_v5",
+      "protocol": "REST_v5",
+      "timestamp": "2026-02-28T22:48:02.437962Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.7071
+  },
+  {
+    "isobus_header": {
+      "spn": "7008",
+      "label": "Solar_Radiation",
+      "unit": "W/m2",
+      "data_type": "instantaneous"
+    },
+    "value": 800.0,
+    "source_metadata": {
+      "origin": "FieldView_v5",
+      "protocol": "REST_v5",
+      "timestamp": "2026-02-28T22:48:02.437962Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7006",
+      "label": "Vapor_Pressure_Deficit",
+      "unit": "kPa",
+      "data_type": "instantaneous"
+    },
+    "value": 4.5,
+    "source_metadata": {
+      "origin": "Calculated_Local",
+      "protocol": "Internal",
+      "timestamp": "2026-02-28T22:48:02.437962Z"
+    },
+    "location_context": {
+      "sector": "1A",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 1.1547
+  },
+  {
+    "isobus_header": {
+      "spn": "1092",
+      "label": "Liquid_Flow_Rate",
+      "unit": "L/h",
+      "data_type": "instantaneous"
+    },
+    "value": 45.43,
+    "source_metadata": {
+      "origin": "CNH_Industrial_v2",
+      "protocol": "CNH_v2",
+      "timestamp": "2026-02-28T22:48:02.487448Z"
+    },
+    "location_context": {
+      "sector": "2B",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "1093",
+      "label": "Liquid_Pressure",
+      "unit": "kPa",
+      "data_type": "instantaneous"
+    },
+    "value": 413.69,
+    "source_metadata": {
+      "origin": "CNH_Industrial_v2",
+      "protocol": "CNH_v2",
+      "timestamp": "2026-02-28T22:48:02.487448Z"
+    },
+    "location_context": {
+      "sector": "2B",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7002",
+      "label": "Volumetric_Water_Content",
+      "unit": "%",
+      "data_type": "instantaneous"
+    },
+    "value": 15.0,
+    "source_metadata": {
+      "origin": "CNH_Industrial_v2",
+      "protocol": "CNH_v2",
+      "timestamp": "2026-02-28T22:48:02.487448Z"
+    },
+    "location_context": {
+      "sector": "2B",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7003",
+      "label": "Ambient_Temp",
+      "unit": "\u00b0C",
+      "data_type": "instantaneous"
+    },
+    "value": 32.22,
+    "source_metadata": {
+      "origin": "CNH_Industrial_v2",
+      "protocol": "CNH_v2",
+      "timestamp": "2026-02-28T22:48:02.487448Z"
+    },
+    "location_context": {
+      "sector": "2B",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7004",
+      "label": "Relative_Humidity",
+      "unit": "%",
+      "data_type": "instantaneous"
+    },
+    "value": 30.0,
+    "source_metadata": {
+      "origin": "CNH_Industrial_v2",
+      "protocol": "CNH_v2",
+      "timestamp": "2026-02-28T22:48:02.487448Z"
+    },
+    "location_context": {
+      "sector": "2B",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  },
+  {
+    "isobus_header": {
+      "spn": "7006",
+      "label": "Vapor_Pressure_Deficit",
+      "unit": "kPa",
+      "data_type": "instantaneous"
+    },
+    "value": 3.37,
+    "source_metadata": {
+      "origin": "Calculated_Local",
+      "protocol": "Internal",
+      "timestamp": "2026-02-28T22:48:02.487448Z"
+    },
+    "location_context": {
+      "sector": "2B",
+      "crop": "Almonds"
+    },
+    "cleaning_flags": [],
+    "value_normalized": 0.0
+  }
+]
