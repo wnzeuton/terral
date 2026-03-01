@@ -1,5 +1,6 @@
 import json
 import random
+import math
 
 def set_nested(d, path, val):
     keys = path.split('.')
@@ -25,18 +26,45 @@ def generate_telemetry_dataset(output_file="simulated_raw_telemetry_100k.jsonl",
     std_devs["7004"] = 5.0 
 
     sources = list(config.keys())
+    
+    packets_per_day = 500 
+    
+    # Calculate exactly where the heatwave starts and ends based on total packets
+    start_heatwave = int(num_packets * 0.25)
+    end_heatwave = int(num_packets * 0.75)
 
     with open(output_file, 'w') as f_out:
-        for _ in range(num_packets):
+        for i in range(num_packets):
             source = random.choice(sources)
             mapping = config[source]["mappings"]
+            
+            current_day = i // packets_per_day
+            
+            # Heatwave Intensity Logic (0.0 to 1.0 multiplier)
+            heat_intensity = 0.0
+            if start_heatwave <= i <= end_heatwave:
+                # Progress goes from 0.0 at the start to 1.0 at the end of the wave
+                progress = (i - start_heatwave) / (end_heatwave - start_heatwave)
+                # Sine wave creates a smooth curve peaking in the middle
+                heat_intensity = math.sin(progress * math.pi)
             
             payload_data = {}
             for spn, map_info in mapping.items():
                 path = map_info["path"]
                 multiplier = map_info.get("multiplier", 1.0)
                 
-                std_val = random.gauss(base_values[spn], std_devs[spn])
+                # Fetch the standard base value
+                current_base = base_values[spn]
+                
+                # Apply the heatwave stress to specific metrics
+                # Assuming 110, 7003, and 7011 represent temperatures that would increase during a heatwave
+                if spn in ["110", "7003", "7011"]:
+                    current_base += (20.0 * heat_intensity) # Peak increase of 20 degrees
+                # Simulating equipment working harder/higher load due to heat stress
+                elif spn in ["7002", "7004"]: 
+                    current_base *= (1.0 + 0.3 * heat_intensity) # Up to 30% higher load
+                
+                std_val = random.gauss(current_base, std_devs[spn])
                 if spn in ["1092", "1093", "7002", "7004", "7005", "7006", "7007", "7008"] and std_val < 0:
                     std_val = 0.0
                     
@@ -56,8 +84,12 @@ def generate_telemetry_dataset(output_file="simulated_raw_telemetry_100k.jsonl",
                 set_nested(payload_data, path, round(raw_val, 3))
                 
             packet = {
+                "timestamp": current_day,
                 "source": source,
-                "location": {"sector": random.choice(["1A", "1B", "2A", "2B"]), "crop": "Almonds"},
+                "location": {
+                    "sector": random.randint(0, 1500), 
+                    "crop": "Almonds"
+                },
                 "data": payload_data
             }
             f_out.write(json.dumps(packet) + "\n")
