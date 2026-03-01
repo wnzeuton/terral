@@ -1,0 +1,50 @@
+[
+  {
+    "packet_index": 154,
+    "timestamp": "2026-03-01T00:01:24.761298Z",
+    "sector": "2A",
+    "diagnosis": "Mineral Scaling",
+    "action": "Execute targeted 10-minute acid flush to restore conductance.",
+    "confidence_score": 0.95,
+    "roi_impact": "High",
+    "trigger_metrics": {
+      "D_score": 2.51
+    }
+  },
+  {
+    "packet_index": 298,
+    "timestamp": "2026-03-01T00:01:32.625905Z",
+    "sector": "2B",
+    "diagnosis": "Mineral Scaling",
+    "action": "Execute targeted 10-minute acid flush to restore conductance.",
+    "confidence_score": 0.95,
+    "roi_impact": "High",
+    "trigger_metrics": {
+      "D_score": 2.62
+    }
+  },
+  {
+    "packet_index": 1298,
+    "timestamp": "2026-03-01T00:02:26.581461Z",
+    "sector": "1B",
+    "diagnosis": "Mineral Scaling",
+    "action": "Execute targeted 10-minute acid flush to restore conductance.",
+    "confidence_score": 0.95,
+    "roi_impact": "High",
+    "trigger_metrics": {
+      "D_score": 2.6
+    }
+  },
+  {
+    "packet_index": 2340,
+    "timestamp": "2026-03-01T00:03:23.098714Z",
+    "sector": "1A",
+    "diagnosis": "Mineral Scaling",
+    "action": "Execute targeted 10-minute acid flush to restore conductance.",
+    "confidence_score": 0.95,
+    "roi_impact": "High",
+    "trigger_metrics": {
+      "D_score": 2.66
+    }
+  }
+]
